@@ -8,6 +8,21 @@ function getTextValue(id) {
     const value = Number(textValue);
     return value;
 }
+
+//Payment Confirmation Modal 
+function showPaymentConfirmationModal() {
+  const modal = document.getElementById("paymentConfirmationModal");
+  modal.classList.remove("hidden");
+  modal.classList.add("flex");
+}
+
+//Hide Payment Confirmation Modal
+
+function hidePaymentConfirmationModal() {
+  const modal = document.getElementById("paymentConfirmationModal");
+  modal.classList.add("hidden");
+}
+
 // This function will calculate the value and return update value
 
 function updatedBalance(donate,balance) {
@@ -20,6 +35,8 @@ function updatedBalance(donate,balance) {
         return balance;
     }
     else {
+        // alert("Amount Donated Successfully");
+        showPaymentConfirmationModal();
         return balance - donate;
     }
 

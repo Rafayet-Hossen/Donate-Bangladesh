@@ -13,7 +13,7 @@
 
 <body style="font-family: 'Lexend', sans-serif;">
     <!-- Nav Section Starts here -->
-    <nav class="flex justify-around navbar bg-[#F9F7F3] p-8">
+    <nav class="flex justify-around navbar sticky  bg-[#F9F7F3] p-8 top-0 z-auto">
         <div>
             <button class="btn bg-[#B4F461] font-bold text-lg">Blog</button>
         </div>
@@ -22,11 +22,31 @@
                     alt=""><span>Donate Bangladesh</span></h3>
         </div>
         <div>
-            <h3 class="flex justify-center items-center gap-2"><img src="./assets/coin.png" alt=""><span id="main-balance">5500</span> BDT
+            <h3 class="flex justify-center items-center gap-2"><img src="./assets/coin.png" alt=""><span
+                    id="main-balance">5500</span> BDT
             </h3>
         </div>
     </nav>
     <!-- nav section end here -->
+    <!-- Modal Starts Here-->
+
+    <!-- Modal HTML Structure -->
+
+    <div id="paymentConfirmationModal"
+        class="fixed inset-0 bg-gray-900 bg-opacity-50 justify-center items-center hidden">
+        <div class="card bg-base-100 w-96 shadow-xl flex-col justify-center items-center p-10 space-y-4">
+            <h1 class="text-4xl font-bold">Congrats!</h1>
+            <div>
+                <img src="./assets/coin.png" alt="">
+            </div>
+            <h2>You Have Donated for Humankind.</h2>
+            <h1 class="text-xl font-bold">Successfully</h1>
+            <button id="btnCloseConfirmation" class="btn font-bold text-md">Close Confirmation</button>
+        </div>
+    </div>
+
+
+    <!-- Modal Ends Here -->
 
     <!-- Main Section Starts Here -->
     <main class="container mx-auto">
@@ -69,7 +89,8 @@
                 </div>
 
                 <div class="flex flex-col w-full lg:w-4/5">
-                    <input id="donation1" type="text" class="mb-2 w-full p-2 border rounded-lg" placeholder="Write Donation Amount">
+                    <input id="donation1" type="text" class="mb-2 w-full p-2 border rounded-lg"
+                        placeholder="Write Donation Amount">
                     <button id="btnDonation1" class="btn btn-success w-full">Donate Now</button>
                 </div>
             </div>
@@ -109,7 +130,8 @@
                 </div>
 
                 <div class="flex flex-col w-full lg:w-4/5">
-                    <input id="donation2" type="text" class="mb-2 w-full p-2 border rounded-lg" placeholder="Write Donation Amount">
+                    <input id="donation2" type="text" class="mb-2 w-full p-2 border rounded-lg"
+                        placeholder="Write Donation Amount">
                     <button id="btnDonation2" class="btn btn-success w-full">Donate Now</button>
                 </div>
             </div>
@@ -150,7 +172,8 @@
                 </div>
 
                 <div class="flex flex-col w-full lg:w-4/5">
-                    <input id="donation3" type="text" class="mb-2 w-full p-2 border rounded-lg" placeholder="Write Donation Amount">
+                    <input id="donation3" type="text" class="mb-2 w-full p-2 border rounded-lg"
+                        placeholder="Write Donation Amount">
                     <button id="btnDonation3" class="btn btn-success w-full">Donate Now</button>
                 </div>
             </div>
@@ -161,8 +184,8 @@
     </main>
 
     <!-- Script File Added Here -->
-     <script src="./js/script.js"></script>
-     <script src="./js/utilities.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/utilities.js"></script>
 </body>
 
 </html>

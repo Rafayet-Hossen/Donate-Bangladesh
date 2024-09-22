@@ -60,3 +60,9 @@ document
     document.getElementById("donationBalance3").innerText =
       updateDonationBalance;
   });
+
+document
+  .getElementById("btnCloseConfirmation")
+  .addEventListener("click", function () {
+    hidePaymentConfirmationModal();
+  });
