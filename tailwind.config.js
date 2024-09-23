@@ -1,10 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./*.{html,js}", // This will include all HTML and JS files in the current directory
-  ],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")], // Include DaisyUI plugin here
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#dbdad7",
+
+          secondary: "#007cd6",
+
+          accent: "#00ec00",
+
+          neutral: "#2b2313",
+
+          info: "#00bfff",
+
+          success: "#B4F461",
+
+          warning: "#e18e00",
+
+          error: "#ff598e",
+        },
+      },
+    ],
+  },
 };

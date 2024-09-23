@@ -15,7 +15,7 @@
     <!-- Nav Section Starts here -->
     <nav class="flex justify-around navbar sticky  bg-[#F9F7F3] p-8 top-0 z-auto">
         <div>
-            <button class="btn bg-[#B4F461] font-bold text-lg">Blog</button>
+            <button class="btn border-none bg-[#B4F461] font-bold text-lg">Blog</button>
         </div>
         <div>
             <h3 class="flex justify-center items-center gap-2 font-bold"><img src="./assets/logo.png"
@@ -41,24 +41,43 @@
             </div>
             <h2>You Have Donated for Humankind.</h2>
             <h1 class="text-xl font-bold">Successfully</h1>
-            <button id="btnCloseConfirmation" class="btn font-bold text-md">Close Confirmation</button>
+            <button id="btnCloseConfirmation" class="btn border-none font-bold text-md">Close Confirmation</button>
         </div>
     </div>
 
 
     <!-- Modal Ends Here -->
 
+    <!-- Button Div -->
+    <div class="flex justify-center gap-6 mt-14">
+        <button id="btnDonation" class="btn border-none btn-success">Donation</button>
+        <button id="btnHistory" class="btn border-none">History</button>
+    </div>
+
+    <!-- Button Dive Ends Here -->
+
+    <!-- History Section Starts -->
+    <!-- <div class="hero bg-base-200 min-h-screen container mx-auto mt-20">
+        <div class="hero-content text-center">
+            <div class="">
+            <div tabindex="0" class="collapse collapse-close border-base-300 bg-base-200 border">
+                <div class="collapse-title text-xl font-medium">I have collapse-close class</div>
+                <div class="collapse-content">
+                    <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- History Section Ends -->
+
     <!-- Main Section Starts Here -->
     <main class="container mx-auto">
         <!-- Main Section Button -->
-        <div class="flex justify-center gap-6 mt-14">
-            <button class="btn btn-active btn-accent">Donation</button>
-            <button class="btn btn-active btn-accent">History</button>
-        </div>
-
         <!-- Donation Section Start -->
         <!-- Donation Section 1 start -->
-        <div class="flex flex-col lg:flex-row justify-evenly items-center border p-10 mt-6 rounded-xl space-y-4">
+        <div class="flex flex-col lg:flex-row justify-evenly items-center border p-10 mt-6 rounded-xl space-y-4 shadow-xl">
 
             <div class="lg:w-1/3 flex justify-center lg:justify-start">
                 <img src="./assets/noakhali.png" alt="">
@@ -67,7 +86,7 @@
             <div class="flex flex-col lg:w-1/2 space-y-4 lg:space-y-2">
 
                 <div class="flex justify-center lg:justify-start">
-                    <button class="btn inline-flex w-auto btn-primary">
+                    <button class="btn border-none inline-flex w-auto btn-primary">
                         <img src="./assets/coin.png" alt="" class="mr-2">
                         <span id="donationBalance1">10000</span> BDT
                     </button>
@@ -98,7 +117,7 @@
         <!-- Donation Section -1 end -->
 
         <!-- Donation Section -2 start -->
-        <div class="flex flex-col lg:flex-row justify-evenly items-center border p-10 mt-6 rounded-xl space-y-4">
+        <div class="flex flex-col lg:flex-row justify-evenly items-center border p-10 mt-6 rounded-xl space-y-4 shadow-xl">
 
             <div class="lg:w-1/3 flex justify-center lg:justify-start">
                 <img src="./assets/feni.png" alt="">
@@ -139,7 +158,7 @@
         <!-- Donation Section -2 end -->
 
         <!-- Donation Section -3 start -->
-        <div class="flex flex-col lg:flex-row justify-evenly items-center border p-10 mt-6 rounded-xl space-y-4 mb-10">
+        <div class="flex flex-col lg:flex-row justify-evenly items-center border p-10 mt-6 rounded-xl space-y-4 mb-10 shadow-xl">
 
             <div class="lg:w-1/3 flex justify-center lg:justify-start">
                 <img src="./assets/quota-protest.png" alt="">
