@@ -12,22 +12,35 @@
 </head>
 
 <body style="font-family: 'Lexend', sans-serif;">
-    <!-- Nav Section Starts here -->
-    <nav class="flex justify-around navbar sticky  bg-[#F9F7F3] p-8 top-0 z-auto">
-        <div>
-            <a href="blog.html"><button class="btn border-none bg-[#B4F461] font-bold text-lg">Blog</button></a>
+
+    <div class="bg-[#F9F7F3] py-8 sticky top-0 z-10">
+        <!-- Nav Section Starts here -->
+        <nav class="flex justify-around navbar sticky  p-8 top-0 z-auto">
+            <div>
+                <a href="blog.html"><button class="btn border-none bg-[#B4F461] font-bold text-lg">Blog</button></a>
+            </div>
+            <div>
+                <h3 class="flex justify-center items-center gap-2 font-bold"><img src="./assets/logo.png"
+                        alt=""><span>Donate
+                        Bangladesh</span></h3>
+            </div>
+            <div>
+                <h3 class="flex justify-center items-center gap-2"><img src="./assets/coin.png" alt=""><span
+                        id="main-balance">5500</span> BDT
+                </h3>
+            </div>
+        </nav>
+        <!-- nav section end here -->
+        <!-- Button Div -->
+        <div class="flex justify-center gap-6 mt-14">
+            <button id="btnDonation" class="btn border-none btn-success">Donation</button>
+            <button id="btnHistory" class="btn border-none">History</button>
         </div>
-        <div>
-            <h3 class="flex justify-center items-center gap-2 font-bold"><img src="./assets/logo.png"
-                    alt=""><span>Donate Bangladesh</span></h3>
-        </div>
-        <div>
-            <h3 class="flex justify-center items-center gap-2"><img src="./assets/coin.png" alt=""><span
-                    id="main-balance">5500</span> BDT
-            </h3>
-        </div>
-    </nav>
-    <!-- nav section end here -->
+
+        <!-- Button Dive Ends Here -->
+
+    </div>
+
     <!-- Modal Starts Here-->
 
     <!-- Modal HTML Structure -->
@@ -49,13 +62,7 @@
 
     <!-- Modal Ends Here -->
 
-    <!-- Button Div -->
-    <div class="flex justify-center gap-6 mt-14">
-        <button id="btnDonation" class="btn border-none btn-success">Donation</button>
-        <button id="btnHistory" class="btn border-none">History</button>
-    </div>
 
-    <!-- Button Dive Ends Here -->
 
     <!-- History Section Starts -->
     <div id="transaction-section" class="hidden bg-red-400 container mx-auto rounded-lg shadow-xl mt-10 mb-10">
