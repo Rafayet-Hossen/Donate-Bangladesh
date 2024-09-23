@@ -1,44 +1,52 @@
 function getFieldValueById(id) {
-    const fieldValue = document.getElementById(id).value;
-    const value = Number(fieldValue);
-    return value;
+  const fieldValue = document.getElementById(id).value;
+  const value = Number(fieldValue);
+  return value;
 }
 function getTextValue(id) {
-    const textValue = document.getElementById(id).innerText;
-    const value = Number(textValue);
-    return value;
+  const textValue = document.getElementById(id).innerText;
+  const value = Number(textValue);
+  return value;
+}
+
+function getInnerTextById(id) {
+  const heading = document.getElementById(id).innerText;
+  return heading;
 }
 
 function showSectionById(id) {
-    document.getElementById('main-donation-section').classList.add('hidden');
-    document.getElementById('history-section').classList.add('hidden');
-    document.getElementById(id).classList.remove('hidden');
-}   
+  document.getElementById("main-donation-section").classList.add("hidden");
+  document.getElementById("history-section").classList.add("hidden");
+  document.getElementById(id).classList.remove("hidden");
+}
 
 // This function will calculate the value and return update value
 
-function updatedBalance(donate,balance) {
-    if(donate < 0) {
-        alert('Invalid Amount');
-        return balance;
-    }
-    else if(donate > balance) {
-        alert('Insufficient Balance');
-        return balance;
-    }
-    else {
-        // alert("Amount Donated Successfully");
-        showPaymentConfirmationModal();
-        return balance - donate;
-    }
-
+function updatedBalance(donate, balance) {
+  if (donate < 0) {
+    alert("Invalid Amount");
+    return balance;
+  } else if (donate > balance) {
+    alert("Insufficient Balance");
+    return balance;
+  } else {
+    // alert("Amount Donated Successfully");
+    showPaymentConfirmationModal();
+    //add transaction history
+    return balance - donate;
+  }
 }
 
 // This will update donation balance
 
-function updatedDonationBalance(currentAmount,donation,balance) {
-    if(donation < 0 || donation > balance) {
-        return currentAmount;
-    }
-    return currentAmount + donation;
+function updatedDonationBalance(currentAmount, donation, balance) {
+  if (donation < 0 || donation > balance) {
+    return currentAmount;
+  }
+  return currentAmount + donation;
+}
+
+function createTransactionHistory(amount, headline, date) {
+  const transaction = `${amount} Taka is ${headline} <br> ${date}`;
+  return transaction;
 }

@@ -6,6 +6,8 @@ document
 
     const accountBalance = getTextValue("main-balance");
     const donationBalance = getTextValue("donationBalance1");
+    const headline = getInnerTextById("donation-heading-1");
+    const date = new Date();
 
     const updateBalance = updatedBalance(fieldValue, accountBalance);
     const updateDonationBalance = updatedDonationBalance(
@@ -13,6 +15,9 @@ document
       fieldValue,
       accountBalance
     );
+
+    const transaction = createTransactionHistory(fieldValue, headline, date);
+    console.log(transaction);
 
     document.getElementById("main-balance").innerText = updateBalance;
     document.getElementById("donationBalance1").innerText =
@@ -27,6 +32,8 @@ document
 
     const accountBalance = getTextValue("main-balance");
     const donationBalance = getTextValue("donationBalance2");
+    const headline = getInnerTextById("donation-heading-2");
+    const date = new Date();
 
     const updateBalance = updatedBalance(fieldValue, accountBalance);
     const updateDonationBalance = updatedDonationBalance(
@@ -34,6 +41,9 @@ document
       fieldValue,
       accountBalance
     );
+
+    const transaction = createTransactionHistory(fieldValue, headline, date);
+    console.log(transaction);
 
     document.getElementById("main-balance").innerText = updateBalance;
     document.getElementById("donationBalance2").innerText =
@@ -48,6 +58,8 @@ document
 
     const accountBalance = getTextValue("main-balance");
     const donationBalance = getTextValue("donationBalance3");
+    const headline = getInnerTextById("donation-heading-3");
+    const date = new Date();
 
     const updateBalance = updatedBalance(fieldValue, accountBalance);
     const updateDonationBalance = updatedDonationBalance(
@@ -56,14 +68,10 @@ document
       accountBalance
     );
 
+    const transaction = createTransactionHistory(fieldValue, headline, date);
+    console.log(transaction);
+
     document.getElementById("main-balance").innerText = updateBalance;
     document.getElementById("donationBalance3").innerText =
       updateDonationBalance;
   });
-
-document
-  .getElementById("btnCloseConfirmation")
-  .addEventListener("click", function () {
-    hidePaymentConfirmationModal();
-  });
-

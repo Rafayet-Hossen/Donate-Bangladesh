@@ -4,7 +4,13 @@ function showPaymentConfirmationModal() {
   modal.classList.remove("hidden");
   modal.classList.add("flex");
 }
-
+// Close Confirmation Modal
+document
+  .getElementById("btnCloseConfirmation")
+  .addEventListener("click", function () {
+    hidePaymentConfirmationModal();
+  });
+  
 //Hide Payment Confirmation Modal
 
 function hidePaymentConfirmationModal() {
