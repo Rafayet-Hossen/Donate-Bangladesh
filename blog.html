@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog||Donate Bangladesh</title>
+    <link href="output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Section Starts here -->
+    <nav class="flex justify-around navbar sticky  bg-[#F9F7F3] p-8 top-0 z-auto">
+        <div>
+            <a href="index.html"><button class="btn border-none bg-[#B4F461] font-bold text-lg">Home</button></a>
+        </div>
+        <div>
+            <h3 class="flex justify-center items-center gap-2 font-bold"><img src="./assets/logo.png"
+                    alt=""><span>Donate
+                    Bangladesh</span></h3>
+        </div>
+        <div>
+            <h3 class="flex justify-center items-center gap-2"><img src="./assets/coin.png" alt=""><span
+                    id="main-balance">5500</span> BDT
+            </h3>
+        </div>
+    </nav>
+    <!-- nav section end here -->
+
+    <!-- Important FAQ section -->
+    <div class="container mx-auto mb-6 mt-6">
+        <div>
+            <p class="text-4xl font-bold flex gap-3">Important FAQ<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                </svg>
+            </p>
+        </div>
+    </div>
+
+    <!-- Important FAQ section end -->
+    <div class="container mx-auto space-y-5">
+        <!-- Question 1 -->
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is Document Object Model(DOM)?</div>
+            <div class="collapse-content">
+                <p>The DOM (Document Object Model) is a way for web browsers to represent and interact with the
+                    structure of a
+                    webpage. It
+                    turns the HTML code of a page into a tree-like structure, where each part of the page (like
+                    elements, text,
+                    and
+                    attributes) is represented as an object.
+
+                    With the DOM, JavaScript can read and change the content, style, and structure of a webpage while
+                    it’s being
+                    viewed,
+                    allowing for dynamic updates and interactivity.</p>
+            </div>
+        </div>
+        <!-- Question 1 end -->
+
+        <!-- Question 2 -->
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>
+                <h1 class="font-extrabold text-2xl">We can select element with:</h1>
+                <ul>
+                    <li class="font-semibold text-xl">1. getElementById</li>
+                    <li class="font-semibold text-xl">2. getElementsByClassName</li>
+                    <li class="font-semibold text-xl">3. getElementsByTagName</li>
+                    <li class="font-semibold text-xl">4. querySelector</li>
+                    <li class="font-semibold text-xl">5. querySelectorAll</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <!-- Question 2 end -->
+
+        <!-- Question 3 -->
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">What is event Delegation in the context of the DOM and why
+                it is
+                useful?</div>
+            <div class="collapse-content">
+                <p class="font-medium">
+                    Event delegation is a technique in the DOM where you add a single event listener to a parent
+                    element,
+                    instead of adding
+                    multiple event listeners to individual child elements. The event listener listens for events on its
+                    children
+                    through
+                    event bubbling (where events propagate up the DOM tree).
+                </p>
+                <br>
+                <h1 class="font-bold text-2xl">Why it is useful:</h1>
+                <ol>
+                    <li class="font-bold">1.Efficiency: Instead of adding event listeners to many elements, you add one
+                        listener
+                        to a common parent.</li>
+                    <li class="font-bold">2.Dynamic elements: It handles events for elements added later (after the page
+                        loads),
+                        without needing new event
+                        listeners.</li>
+                </ol>
+            </div>
+        </div>
+        <!-- Question 3 end -->
+
+        <!-- Question 4 -->
+        <div tabindex="0" class="collapse collapse-arrow border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                using the
+                DOM?</div>
+            <div class="collapse-content">
+                <p class="font-medium">
+                    We can Manipulate HTML element by using some method and we can also set some attributes and style as
+                    we
+                    like.Javascript gives us the full potential to do whatever we want.
+                </p>
+                <br>
+                <p>
+                <ul class="space-y-5">
+                    <li>1. Attribute Manipulation:
+                        getAttribute(attributeName): Retrieves the value of a specified attribute.
+                        setAttribute(attributeName, value): Sets or updates the value of an attribute.
+                        removeAttribute(attributeName): Removes an attribute from an element.</li>
+                    <li>
+                        2. Style Manipulation:
+                        element.style.property = value: Directly sets a specific CSS style property, such as
+                        element.style.color
+                        = 'red';.
+                    </li>
+                    <li>
+                        3. Class Manipulation:
+                        classList.add(className): Adds a new CSS class to the element.
+                        classList.remove(className): Removes a CSS class from the element.
+                        classList.toggle(className): Toggles the presence of a CSS class (adds if missing, removes if
+                        present).
+                    </li>
+                </ul>
+
+
+
+                </p>
+            </div>
+        </div>
+        <!-- Question 4 end -->
+    </div>
+
+    <!-- Script File Added Here -->
+    <script src="./js/script.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/transaction.js"></script>
+    <script src="./js/features.js"></script>
+</body>
+
+</html>

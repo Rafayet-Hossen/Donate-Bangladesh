@@ -1,5 +1,9 @@
 function getFieldValueById(id) {
   const fieldValue = document.getElementById(id).value;
+  if(isNaN(fieldValue)) {
+    alert("Invalid Input");
+    return 0;
+  }
   const value = Number(fieldValue);
   return value;
 }
@@ -17,8 +21,8 @@ function getInnerTextById(id) {
 // This function will calculate the value and return update value
 
 function updatedBalance(donate, balance) {
+  console.log(balance);
   if (donate < 0) {
-    alert("Invalid Amount");
     return balance;
   } else if (donate > balance) {
     alert("Insufficient Balance");
@@ -26,7 +30,6 @@ function updatedBalance(donate, balance) {
   } else {
     // alert("Amount Donated Successfully");
     showPaymentConfirmationModal();
-    //add transaction history
     return balance - donate;
   }
 }
