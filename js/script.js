@@ -17,7 +17,9 @@ document
     );
 
     const transaction = createTransactionHistory(fieldValue, headline, date);
-    console.log(transaction);
+    const p = document.createElement('p');
+    p.innerText = transaction;
+    document.getElementById("transaction-history").appendChild(p);
 
     document.getElementById("main-balance").innerText = updateBalance;
     document.getElementById("donationBalance1").innerText =
@@ -43,7 +45,9 @@ document
     );
 
     const transaction = createTransactionHistory(fieldValue, headline, date);
-    console.log(transaction);
+    const p = document.createElement("p");
+    p.innerText = transaction;
+    document.getElementById("transaction-history").appendChild(p);
 
     document.getElementById("main-balance").innerText = updateBalance;
     document.getElementById("donationBalance2").innerText =
@@ -69,7 +73,9 @@ document
     );
 
     const transaction = createTransactionHistory(fieldValue, headline, date);
-    console.log(transaction);
+    const p = document.createElement("p");
+    p.innerText = transaction;
+    document.getElementById("transaction-history").appendChild(p);
 
     document.getElementById("main-balance").innerText = updateBalance;
     document.getElementById("donationBalance3").innerText =

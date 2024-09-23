@@ -14,12 +14,6 @@ function getInnerTextById(id) {
   return heading;
 }
 
-function showSectionById(id) {
-  document.getElementById("main-donation-section").classList.add("hidden");
-  document.getElementById("history-section").classList.add("hidden");
-  document.getElementById(id).classList.remove("hidden");
-}
-
 // This function will calculate the value and return update value
 
 function updatedBalance(donate, balance) {
@@ -47,6 +41,6 @@ function updatedDonationBalance(currentAmount, donation, balance) {
 }
 
 function createTransactionHistory(amount, headline, date) {
-  const transaction = `${amount} Taka is ${headline} <br> ${date}`;
+  const transaction = `${amount} Taka is ${headline} Date: ${date}`;
   return transaction;
 }
