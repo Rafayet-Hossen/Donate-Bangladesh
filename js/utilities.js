@@ -1,7 +1,6 @@
 function getFieldValueById(id) {
   const fieldValue = document.getElementById(id).value;
-  if(isNaN(fieldValue)) {
-    alert("Invalid Input");
+  if (isNaN(fieldValue)) {
     return 0;
   }
   const value = Number(fieldValue);
@@ -25,7 +24,6 @@ function updatedBalance(donate, balance) {
   if (donate < 0) {
     return balance;
   } else if (donate > balance) {
-    alert("Insufficient Balance");
     return balance;
   } else {
     // alert("Amount Donated Successfully");
