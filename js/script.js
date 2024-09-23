@@ -67,13 +67,3 @@ document
     hidePaymentConfirmationModal();
   });
 
-// btn active status toggle
-document.getElementById('btnDonation').addEventListener('click',function(){
-  document.getElementById('btnDonation').classList.add('btn-success');
-  document.getElementById('btnHistory').classList.remove('btn-success');
-})
-
-document.getElementById("btnHistory").addEventListener("click", function () {
-  document.getElementById("btnDonation").classList.remove("btn-success");
-  document.getElementById("btnHistory").classList.add("btn-success");
-});

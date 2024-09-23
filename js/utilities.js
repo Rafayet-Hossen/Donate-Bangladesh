@@ -9,19 +9,11 @@ function getTextValue(id) {
     return value;
 }
 
-//Payment Confirmation Modal 
-function showPaymentConfirmationModal() {
-  const modal = document.getElementById("paymentConfirmationModal");
-  modal.classList.remove("hidden");
-  modal.classList.add("flex");
-}
-
-//Hide Payment Confirmation Modal
-
-function hidePaymentConfirmationModal() {
-  const modal = document.getElementById("paymentConfirmationModal");
-  modal.classList.add("hidden");
-}
+function showSectionById(id) {
+    document.getElementById('main-donation-section').classList.add('hidden');
+    document.getElementById('history-section').classList.add('hidden');
+    document.getElementById(id).classList.remove('hidden');
+}   
 
 // This function will calculate the value and return update value
 
