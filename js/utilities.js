@@ -41,7 +41,7 @@ function updatedDonationBalance(currentAmount, donation, balance) {
   return currentAmount + donation;
 }
 
-function createTransactionHistory(amount, headline, date) {
-  const transaction = `${amount} Taka is ${headline} Date: ${date}`;
+function createTransactionHistory(amount, headline) {
+  const transaction = `${amount} Taka is ${headline}`;
   return transaction;
 }

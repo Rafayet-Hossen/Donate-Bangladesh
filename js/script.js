@@ -16,9 +16,12 @@ document
         accountBalance
       );
 
-      const transaction = createTransactionHistory(fieldValue, headline, date);
-      const p = document.createElement("p");
-      p.innerText = transaction;
+      const transaction = createTransactionHistory(fieldValue, headline);
+      const p = document.createElement("div");
+      p.innerHTML = `<div class="bg-white h-28 w-28">
+      <p class="font-bold text-xl">${transaction}</p>
+      <p class="text-gray-500">${date}</p>
+      </div>`;
       document.getElementById("transaction-history").appendChild(p);
 
       document.getElementById("main-balance").innerText = updateBalance;
@@ -50,9 +53,12 @@ document
         accountBalance
       );
 
-      const transaction = createTransactionHistory(fieldValue, headline, date);
-      const p = document.createElement("p");
-      p.innerText = transaction;
+      const transaction = createTransactionHistory(fieldValue, headline);
+      const p = document.createElement("div");
+      p.innerHTML = `<div class="bg-white h-28 w-28">
+      <p class="font-bold text-xl">${transaction}</p>
+      <p class="text-gray-500">${date}</p>
+      </div>`;
       document.getElementById("transaction-history").appendChild(p);
 
       document.getElementById("main-balance").innerText = updateBalance;
@@ -60,7 +66,7 @@ document
         updateDonationBalance;
     } else if (accountBalance == 0) {
       alert("Insufficient Balance");
-    } else if(fieldValue < 0){
+    } else if (fieldValue < 0) {
       alert("Invalid Amount");
     }
   });
@@ -84,9 +90,12 @@ document
         accountBalance
       );
 
-      const transaction = createTransactionHistory(fieldValue, headline, date);
-      const p = document.createElement("p");
-      p.innerText = transaction;
+      const transaction = createTransactionHistory(fieldValue, headline);
+      const p = document.createElement("div");
+      p.innerHTML = `<div class="bg-white h-28 w-28">
+      <p class="font-bold text-xl">${transaction}</p>
+      <p class="text-gray-500">${date}</p>
+      </div>`;
       document.getElementById("transaction-history").appendChild(p);
 
       document.getElementById("main-balance").innerText = updateBalance;

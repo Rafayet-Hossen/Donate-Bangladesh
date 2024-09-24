@@ -10,7 +10,7 @@ document
   .addEventListener("click", function () {
     hidePaymentConfirmationModal();
   });
-  
+
 //Hide Payment Confirmation Modal
 
 function hidePaymentConfirmationModal() {
@@ -20,31 +20,28 @@ function hidePaymentConfirmationModal() {
 
 // btn active status toggle
 
-const donationSection = document.getElementById('main-donation-section');
-const transactionSection = document.getElementById('transaction-section');
+const donationSection = document.getElementById("main-donation-section");
+const transactionSection = document.getElementById("transaction-section");
 
-const btnDonation = document.getElementById('btnDonation');
-const btnHistory = document.getElementById('btnHistory');
+const btnDonation = document.getElementById("btnDonation");
+const btnHistory = document.getElementById("btnHistory");
 
-btnDonation.addEventListener('click', function () {
-    
-    donationSection.classList.remove('hidden');
-    
-    transactionSection.classList.add('hidden');
+btnDonation.addEventListener("click", function () {
+  donationSection.classList.remove("hidden");
 
-    btnDonation.classList.add('btn-success');
-  
-    btnHistory.classList.remove('btn-success');
+  transactionSection.classList.add("hidden");
+
+  btnDonation.classList.add("btn-success");
+
+  btnHistory.classList.remove("btn-success");
 });
 
-btnHistory.addEventListener('click', function () {
-    
-    transactionSection.classList.remove('hidden');
-   
-    donationSection.classList.add('hidden');
+btnHistory.addEventListener("click", function () {
+  transactionSection.classList.remove("hidden");
 
-    btnHistory.classList.add('btn-success');
-   
-    btnDonation.classList.remove('btn-success');
+  donationSection.classList.add("hidden");
+
+  btnHistory.classList.add("btn-success");
+
+  btnDonation.classList.remove("btn-success");
 });
-
