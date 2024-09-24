@@ -19,15 +19,15 @@ document
         donationBalance,
         fieldValue
       );
-      console.log(updateBalance, updateDonationBalance);
       const transaction = createTransactionHistory(fieldValue, headline);
       const p = document.createElement("div");
-      p.innerHTML = `<div class="bg-white h-28 w-28">
-      <p class="font-bold text-xl">${transaction}</p>
-      <p class="text-gray-500">${date}</p>
-      </div>`;
-      document.getElementById("transaction-history").appendChild(p);
-
+      p.classList.add("bg-gray-100", "p-6", "rounded-lg");
+      p.innerHTML = `
+      <p class="font-bold text-2xl text-center p-4">${transaction}</p>
+      <p class="text-gray-600 text-center p-4">${date}</p>
+      `;
+      document.getElementById("transaction-section").appendChild(p);
+      console.log(p);
       document.getElementById("main-balance").innerText = updateBalance;
       document.getElementById("donationBalance1").innerText =
         updateDonationBalance;
@@ -59,12 +59,13 @@ document
 
       const transaction = createTransactionHistory(fieldValue, headline);
       const p = document.createElement("div");
-      p.innerHTML = `<div class="bg-white h-28 w-28">
-      <p class="font-bold text-xl">${transaction}</p>
-      <p class="text-gray-500">${date}</p>
-      </div>`;
-      document.getElementById("transaction-history").appendChild(p);
-
+      p.classList.add("bg-gray-100", "p-6", "rounded-lg");
+      p.innerHTML = `
+      <p class="font-bold text-2xl text-center">${transaction}</p>
+      <p class="text-gray-600 text-center">${date}</p>
+      `;
+      document.getElementById("transaction-section").appendChild(p);
+      console.log(p.innerHTML);
       document.getElementById("main-balance").innerText = updateBalance;
       document.getElementById("donationBalance2").innerText =
         updateDonationBalance;
@@ -96,11 +97,13 @@ document
 
       const transaction = createTransactionHistory(fieldValue, headline);
       const p = document.createElement("div");
-      p.innerHTML = `<div class="bg-white h-28 w-28">
-      <p class="font-bold text-xl">${transaction}</p>
-      <p class="text-gray-500">${date}</p>
-      </div>`;
-      document.getElementById("transaction-history").appendChild(p);
+      p.classList.add("bg-gray-100", "p-6", "rounded-lg");
+      p.innerHTML = `
+      <p class="font-bold text-2xl text-center">${transaction}</p>
+      <p class="text-gray-600 text-center">${date}</p>
+      `;
+      console.log(p.innerHTML);
+      document.getElementById("transaction-section").appendChild(p);
 
       document.getElementById("main-balance").innerText = updateBalance;
       document.getElementById("donationBalance3").innerText =
