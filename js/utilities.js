@@ -1,11 +1,12 @@
 function getFieldValueById(id) {
   const fieldValue = document.getElementById(id).value;
-  if (isNaN(fieldValue)) {
-    return 0;
-  }
   const value = Number(fieldValue);
+  if (isNaN(value)) {
+    return "NULL";
+  }
   return value;
 }
+
 function getTextValue(id) {
   const textValue = document.getElementById(id).innerText;
   const value = Number(textValue);
@@ -20,24 +21,13 @@ function getInnerTextById(id) {
 // This function will calculate the value and return update value
 
 function updatedBalance(donate, balance) {
-  console.log(balance);
-  if (donate < 0) {
-    return balance;
-  } else if (donate > balance) {
-    return balance;
-  } else {
-    // alert("Amount Donated Successfully");
-    showPaymentConfirmationModal();
-    return balance - donate;
-  }
+  showPaymentConfirmationModal();
+  return balance - donate;
 }
 
 // This will update donation balance
 
-function updatedDonationBalance(currentAmount, donation, balance) {
-  if (donation < 0 || donation > balance) {
-    return currentAmount;
-  }
+function updatedDonationBalance(currentAmount, donation) {
   return currentAmount + donation;
 }
 

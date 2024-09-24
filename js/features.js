@@ -1,6 +1,8 @@
 //Payment Confirmation Modal
 function showPaymentConfirmationModal() {
   const modal = document.getElementById("paymentConfirmationModal");
+  const navbar = document.getElementById('navbar');
+  navbar.classList.add("hidden");
   modal.classList.remove("hidden");
   modal.classList.add("flex");
 }
@@ -8,15 +10,11 @@ function showPaymentConfirmationModal() {
 document
   .getElementById("btnCloseConfirmation")
   .addEventListener("click", function () {
-    hidePaymentConfirmationModal();
+    const modal = document.getElementById("paymentConfirmationModal");
+    modal.classList.add("hidden");
+    const navbar = document.getElementById("navbar");
+    navbar.classList.remove("hidden");
   });
-
-//Hide Payment Confirmation Modal
-
-function hidePaymentConfirmationModal() {
-  const modal = document.getElementById("paymentConfirmationModal");
-  modal.classList.add("hidden");
-}
 
 // btn active status toggle
 
