@@ -16,10 +16,9 @@ document
       const updateBalance = updatedBalance(fieldValue, accountBalance);
       const updateDonationBalance = updatedDonationBalance(
         donationBalance,
-        fieldValue,
-        accountBalance
+        fieldValue
       );
-
+      console.log(updateBalance,updateDonationBalance);
       const transaction = createTransactionHistory(fieldValue, headline);
       const p = document.createElement("div");
       p.innerHTML = `<div class="bg-white h-28 w-28">
@@ -29,7 +28,7 @@ document
       document.getElementById("transaction-history").appendChild(p);
 
       document.getElementById("main-balance").innerText = updateBalance;
-      document.getElementById("donationBalance2").innerText =
+      document.getElementById("donationBalance1").innerText =
         updateDonationBalance;
     }
   });
@@ -103,7 +102,7 @@ document
       document.getElementById("transaction-history").appendChild(p);
 
       document.getElementById("main-balance").innerText = updateBalance;
-      document.getElementById("donationBalance2").innerText =
+      document.getElementById("donationBalance3").innerText =
         updateDonationBalance;
     }
   });
