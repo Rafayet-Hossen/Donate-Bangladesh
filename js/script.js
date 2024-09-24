@@ -3,6 +3,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const fieldValue = getFieldValueById("donation1");
+    clearInputField("donation1");
     const accountBalance = getTextValue("main-balance");
     const donationBalance = getTextValue("donationBalance1");
     const headline = getInnerTextById("donation-heading-1");
@@ -18,7 +19,7 @@ document
         donationBalance,
         fieldValue
       );
-      console.log(updateBalance,updateDonationBalance);
+      console.log(updateBalance, updateDonationBalance);
       const transaction = createTransactionHistory(fieldValue, headline);
       const p = document.createElement("div");
       p.innerHTML = `<div class="bg-white h-28 w-28">
@@ -38,7 +39,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const fieldValue = getFieldValueById("donation2");
-
+    clearInputField("donation2");
     const accountBalance = getTextValue("main-balance");
     const donationBalance = getTextValue("donationBalance2");
     const headline = getInnerTextById("donation-heading-2");
@@ -75,7 +76,7 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault();
     const fieldValue = getFieldValueById("donation3");
-
+    clearInputField("donation3");
     const accountBalance = getTextValue("main-balance");
     const donationBalance = getTextValue("donationBalance3");
     const headline = getInnerTextById("donation-heading-3");

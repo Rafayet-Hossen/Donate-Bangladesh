@@ -35,3 +35,7 @@ function createTransactionHistory(amount, headline) {
   const transaction = `${amount} Taka is ${headline}`;
   return transaction;
 }
+
+function clearInputField(id) {
+  document.getElementById(id).value = "";
+}

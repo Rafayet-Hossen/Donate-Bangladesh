@@ -1,7 +1,7 @@
 //Payment Confirmation Modal
 function showPaymentConfirmationModal() {
   const modal = document.getElementById("paymentConfirmationModal");
-  const navbar = document.getElementById('navbar');
+  const navbar = document.getElementById("navbar");
   navbar.classList.add("hidden");
   modal.classList.remove("hidden");
   modal.classList.add("flex");
